@@ -4,6 +4,14 @@ import Button from './components/Button';
 
 import './App.css';
 
+const texts = [
+	'click me-1',
+	'click me-2',
+	'click me-3',
+	'click me-4',
+	'click me-5',
+];
+
 function App() {
 	const [count, setCount] = useState(0);
 	const incrementCount = () => {
@@ -13,10 +21,9 @@ function App() {
 	return (
 		<div className="App">
 			<Counter count={count} />
-			<Button onClick={incrementCount} />
-			<Button onClick={incrementCount} />
-			<Button onClick={incrementCount} />
-			<Button onClick={incrementCount} />
+			{texts.map((text, index) => {
+				return <Button onClick={incrementCount} text={text} key={index} />;
+			})}
 		</div>
 	);
 }
