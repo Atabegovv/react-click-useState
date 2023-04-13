@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-click-useState/static/css/main.65996122.css",
+    "main.js": "/react-click-useState/static/js/main.cf4b5372.js",
+    "index.html": "/react-click-useState/index.html",
+    "main.65996122.css.map": "/react-click-useState/static/css/main.65996122.css.map",
+    "main.cf4b5372.js.map": "/react-click-useState/static/js/main.cf4b5372.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65996122.css",
+    "static/js/main.cf4b5372.js"
+  ]
+}
