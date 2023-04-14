@@ -1,13 +1,13 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-h1{
+h1 {
 	font-size: 40px;
-	color: #FFF;
+	color: #fff;
 }
 
-button{
+button {
 	font-size: 24px;
 	font-weight: 500;
 
@@ -16,4 +16,13 @@ button{
 
 	border-radius: 10px;
 	cursor: pointer;
+}
+
+.reset-btn {
+	padding: 15px 30px;
+	background-color: blanchedalmond;
+	transition: all 0.5s;
+}
+.reset-btn:hover {
+	background-color: #fff;
 }

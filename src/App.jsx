@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Counter from './components/Counter';
 import Button from './components/Button';
+import ResetButton from './components/ResetButton';
 
 import './App.css';
 
@@ -14,8 +15,13 @@ const texts = [
 
 function App() {
 	const [count, setCount] = useState(0);
+
 	const incrementCount = () => {
 		setCount(count + 1);
+	};
+
+	const resetCount = () => {
+		setCount(0);
 	};
 
 	return (
@@ -24,6 +30,7 @@ function App() {
 			{texts.map((text, index) => {
 				return <Button onClick={incrementCount} text={text} key={index} />;
 			})}
+			{count > 0 && <ResetButton resetCount={resetCount} />}
 		</div>
 	);
 }
